@@ -1,0 +1,6 @@
+git commit 
+git push
+git pull
+git add
+git init
+patch -pn < patch_file
