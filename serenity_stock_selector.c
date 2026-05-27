@@ -7,7 +7,7 @@ static const float kMaxDebtRatio = 60.0f;
 
 int is_serenity_candidate(const Stock *stock)
 {
-    if (stock == 0) {
+    if (stock == NULL) {
         return 0;
     }
 
@@ -25,14 +25,13 @@ size_t select_serenity_stocks(
     Stock *selected_stocks,
     size_t max_selected_count)
 {
-    size_t stock_index = 0;
     size_t selected_count = 0;
 
-    if (stocks == 0 || selected_stocks == 0 || max_selected_count == 0) {
+    if (stocks == NULL || selected_stocks == NULL || max_selected_count == 0) {
         return 0;
     }
 
-    for (stock_index = 0; stock_index < stock_count; ++stock_index) {
+    for (size_t stock_index = 0; stock_index < stock_count; ++stock_index) {
         if (selected_count >= max_selected_count) {
             break;
         }
