@@ -17,10 +17,9 @@ int main(void)
         sizeof(universe) / sizeof(universe[0]),
         selected,
         sizeof(selected) / sizeof(selected[0]));
-    size_t index = 0;
 
     printf("Serenity选股结果（低估值、高盈利、稳增长、低负债、现金流为正）：\n");
-    for (index = 0; index < selected_count; ++index) {
+    for (size_t index = 0; index < selected_count; ++index) {
         printf("%s %s\n", selected[index].code, selected[index].name);
     }
 
