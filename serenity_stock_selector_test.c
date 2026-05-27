@@ -1,4 +1,5 @@
 #include <assert.h>
+#include <stdio.h>
 #include <string.h>
 
 #include "serenity_stock_selector.h"
@@ -22,6 +23,7 @@ int main(void)
     assert(select_serenity_stocks(NULL, 4, selected, 4) == 0);
     assert(select_serenity_stocks(stocks, 4, NULL, 4) == 0);
     assert(select_serenity_stocks(stocks, 4, selected, 0) == 0);
+    printf("serenity_stock_selector_test passed\n");
 
     return 0;
 }

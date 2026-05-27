@@ -2,8 +2,10 @@
 
 #include "serenity_stock_selector.h"
 
-int main(void)
+int main(int argc, const char *argv[])
 {
+    (void)argc;
+    (void)argv;
     const Stock universe[] = {
         {"600519", "贵州茅台", 18.6f, 31.2f, 15.4f, 24.8f, 1},
         {"000333", "美的集团", 14.9f, 22.7f, 10.1f, 52.4f, 1},
